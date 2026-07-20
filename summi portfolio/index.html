@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Summi Fatima is a Frontend Web Developer crafting modern, responsive, and high-performing websites with elegant UI and clean code."
+    />
+    <meta name="keywords" content="frontend developer, portfolio, web design, Summi Fatima, responsive website" />
+    <meta name="author" content="Summi Fatima" />
+    <meta property="og:title" content="Summi Fatima | Frontend Web Developer" />
+    <meta property="og:description" content="Premium personal portfolio website for Summi Fatima." />
+    <meta property="og:type" content="website" />
+    <title>Summi Fatima | Frontend Web Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="loader" aria-label="Loading portfolio">
+      <div class="loader__ring"></div>
+      <p>Loading premium experience...</p>
+    </div>
+
+    <div class="cursor-dot" aria-hidden="true"></div>
+    <div class="cursor-outline" aria-hidden="true"></div>
+    <div id="particles-js" aria-hidden="true"></div>
+
+    <a href="#top" class="back-to-top" aria-label="Back to top">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <header class="site-header" id="top">
+      <nav class="navbar container" aria-label="Primary navigation">
+        <a href="#home" class="brand">Summi<span>Fatima</span></a>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+          <i class="fas fa-moon"></i>
+        </button>
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section" id="home">
+        <div class="container hero-grid">
+          <div class="hero-content" data-aos="fade-right">
+            <p class="eyebrow">Frontend Web Developer</p>
+            <h1>
+              Hi, I’m <span class="highlight">Summi Fatima</span>
+            </h1>
+            <h2>
+              I create <span id="typed"></span>
+            </h2>
+            <p class="hero-copy">
+              I create modern, responsive, and interactive websites with clean code, premium visuals,
+              and a thoughtful user experience.
+            </p>
+            <div class="cta-group">
+              <a href="mailto:summi1417@gmail.com" class="btn btn-primary">Hire Me</a>
+              <a href="assets/summi-fatima-cv.txt" class="btn btn-secondary" download>Download CV</a>
+              <!-- <a href="#projects" class="btn btn-ghost">View Projects</a> -->
+            </div>
+            <div class="social-floating" aria-label="Social links">
+              <a href="https://github.com" target="_blank" rel="noreferrer"><i class="fab fa-github"></i></a>
+              <a href="https://wa.me/123456789" target="_blank" rel="noreferrer"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+
+          <div class="hero-visual" data-aos="fade-left">
+            <div class="orb orb-a"></div>
+            <div class="orb orb-b"></div>
+            <div class="profile-card tilt-card">
+              <!-- <div class="glow-ring"></div> -->
+              <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 500'><rect width='400' height='500' rx='40' fill='%23f8fafc'/><circle cx='200' cy='180' r='90' fill='%236c63ff'/><circle cx='200' cy='180' r='72' fill='%23f8fafc'/><path d='M90 430c20-110 90-160 110-160s90 50 110 160' fill='%2300d9ff'/><rect x='95' y='100' width='210' height='40' rx='20' fill='%238b5cf6' opacity='0.35'/></svg>" alt="Portrait of Summi Fatima" loading="eager" />
+            </div>
+            <div class="floating-badge">
+              <i class="fas fa-circle"></i>
+              Available for freelance work
+            </div>
+          </div>
+        </div>
+
+        <div class="wave-divider" aria-hidden="true">
+          <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+            <path d="M0,64L80,69.3C160,75,320,85,480,80C640,75,800,53,960,48C1120,43,1280,53,1360,58.7L1440,64L1440,120L0,120Z" fill="rgba(255,255,255,0.75)"></path>
+          </svg>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="container">
+          <div class="section-head" data-aos="fade-up">
+            <p class="eyebrow">About Me</p>
+            <h2>Crafting polished digital experiences with purpose.</h2>
+            <p>
+              I’m a frontend developer passionate about blending performance, accessibility, and visual
+              storytelling into every interface I build.
+            </p>
+          </div>
+
+          <div class="about-grid">
+            <article class="glass-card about-card" data-aos="fade-up">
+              <h3>Professional Introduction</h3>
+              <p>
+                I specialize in building responsive, elegant websites for modern brands, startups, and
+                personal portfolios. My work balances speed, usability, and visual beauty.
+              </p>
+              <ul class="about-list">
+                <li><strong>Experience:</strong> 2+ years in web development and UI implementation</li>
+                <li><strong>Education:</strong> Computer science foundation with a strong focus on design</li>
+                <li><strong>Passion:</strong> Turning ideas into beautiful digital interactions</li>
+                <li><strong>Career Goal:</strong> Build meaningful products and help businesses grow online</li>
+              </ul>
+            </article>
+
+            <!-- <article class="glass-card about-card highlight-card" data-aos="fade-up" data-aos-delay="100">
+              <h3>What I Bring</h3>
+              <p>
+                Clean code, accessible layouts, modern animations, and a premium visual standard that makes
+                every experience feel thoughtful and memorable.
+              </p>
+              <div class="mini-pills">
+                <span>Responsive UI</span>
+                <span>Fast Performance</span>
+                <span>SEO Ready</span>
+                <span>Pixel-Perfect</span>
+              </div>
+            </article> -->
+          </div>
+
+          <div class="counters-grid">
+            <div class="counter-card glass-card" data-aos="zoom-in">
+              <span class="counter-value" data-target="10">0</span>
+              <p>Projects Completed</p>
+            </div>
+            <div class="counter-card glass-card" data-aos="zoom-in" data-aos-delay="100">
+              <span class="counter-value" data-target="8">0</span>
+              <p>Happy Clients</p>
+            </div>
+            <div class="counter-card glass-card" data-aos="zoom-in" data-aos-delay="200">
+              <span class="counter-value" data-target="6">0</span>
+              <p>MONTH Learning</p>
+            </div>
+            <div class="counter-card glass-card" data-aos="zoom-in" data-aos-delay="300">
+              <span class="counter-value" data-target="100">0</span>
+              <p>Client Satisfaction</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="skills">
+        <div class="container">
+          <div class="section-head" data-aos="fade-up">
+            <p class="eyebrow">Skills</p>
+            <h2>Elegant interfaces powered by modern frontend skills.</h2>
+          </div>
+
+          <div class="skill-section">
+            <div class="skill-group glass-card" data-aos="fade-up">
+              <h3>Frontend</h3>
+              <div class="skill-grid">
+                <div class="skill-card">
+                  <div class="progress-ring" data-progress="95"><span>95%</span></div>
+                  <p>HTML5</p>
+                </div>
+                <div class="skill-card">
+                  <div class="progress-ring" data-progress="92"><span>92%</span></div>
+                  <p>CSS3</p>
+                </div>
+                <div class="skill-card">
+                  <div class="progress-ring" data-progress="75"><span>75%</span></div>
+                  <p>JavaScript</p>
+                </div>
+                <div class="skill-card">
+                  <div class="progress-ring" data-progress="85"><span>85%</span></div>
+                  <p>Bootstrap</p>
+                </div>
+                <div class="skill-card">
+                  <div class="progress-ring" data-progress="82"><span>82%</span></div>
+                  <p>Tailwind CSS</p>
+                </div>
+                <div class="skill-card">
+                  <div class="progress-ring" data-progress="60"><span>60%</span></div>
+                  <p>React</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill-group glass-card" data-aos="fade-up" data-aos-delay="100">
+              <h3>Backend Basics</h3>
+              <div class="skill-grid compact">
+                <div class="skill-card">
+                  <div class="progress-ring" data-progress="68"><span>68%</span></div>
+                  <p>PHP</p>
+                </div>
+                <div class="skill-card">
+                  <div class="progress-ring" data-progress="75"><span>75%</span></div>
+                  <p>MySQL</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill-group glass-card" data-aos="fade-up" data-aos-delay="200">
+              <h3>Tools</h3>
+              <div class="skill-grid compact">
+                <div class="skill-card">
+                  <div class="progress-ring" data-progress="93"><span>93%</span></div>
+                  <p>Git</p>
+                </div>
+                <div class="skill-card">
+                  <div class="progress-ring" data-progress="90"><span>90%</span></div>
+                  <p>GitHub</p>
+                </div>
+                <div class="skill-card">
+                  <div class="progress-ring" data-progress="94"><span>94%</span></div>
+                  <p>VS Code</p>
+                </div>
+                <div class="skill-card">
+                  <div class="progress-ring" data-progress="88"><span>88%</span></div>
+                  <p>Figma</p>
+                </div>
+                <div class="skill-card">
+                  <div class="progress-ring" data-progress="85"><span>85%</span></div>
+                  <p>Canva</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="services">
+        <div class="container">
+          <div class="section-head" data-aos="fade-up">
+            <p class="eyebrow">Services</p>
+            <h2>Premium web solutions that feel effortless and modern.</h2>
+          </div>
+
+          <div class="services-grid">
+            <article class="service-card glass-card" data-aos="fade-up">
+              <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
+              <h3>Responsive Website Design</h3>
+              <p>Mobile-first layouts with beautiful UI and smooth interactions across every screen size.</p>
+              <a href="#contact" class="text-link">Learn More</a>
+            </article>
+            <article class="service-card glass-card" data-aos="fade-up" data-aos-delay="50">
+              <div class="service-icon"><i class="fas fa-rocket"></i></div>
+              <h3>Landing Page Design</h3>
+              <p>High-converting landing pages tailored to capture attention and guide visitors.</p>
+              <a href="#contact" class="text-link">Learn More</a>
+            </article>
+            <article class="service-card glass-card" data-aos="fade-up" data-aos-delay="100">
+              <div class="service-icon"><i class="fas fa-user-alt"></i></div>
+              <h3>Portfolio Website</h3>
+              <p>Curated personal portfolios built to impress recruiters, clients, and collaborators.</p>
+              <a href="#contact" class="text-link">Learn More</a>
+            </article>
+            <article class="service-card glass-card" data-aos="fade-up" data-aos-delay="150">
+              <div class="service-icon"><i class="fas fa-building"></i></div>
+              <h3>Business Website</h3>
+              <p>Professional websites for businesses looking to strengthen their digital presence.</p>
+              <a href="#contact" class="text-link">Learn More</a>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="projects">
+        <div class="container">
+          <div class="section-head" data-aos="fade-up">
+            <p class="eyebrow">Featured Projects</p>
+            <h2>Selected work that reflects precision and creativity.</h2>
+          </div>
+
+          <div class="projects-grid">
+            <article class="project-card glass-card" data-aos="fade-up">
+              <div class="project-image image-one"></div>
+              <div class="project-content">
+                <h3>Portfolio Website</h3>
+                <p>Elegant one-page portfolio UI with storytelling sections and smooth motion.</p>
+                <div class="tech-list">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JS</span>
+                </div>
+                  <div class="project-actions">
+                  <a href="#" class="btn btn-small">Live Demo</a>
+                  <a href="#" class="btn btn-small btn-ghost">GitHub</a>
+                </div>
+              </div>
+            </article>
+            <article class="project-card glass-card" data-aos="fade-up" data-aos-delay="100">
+              <div class="project-image image-three"></div>
+              <div class="project-content">
+                <h3>Perfume Brand Website</h3>
+                <p>A luxurious landing page that highlights premium products with immersive visuals.</p>
+                <div class="tech-list">
+                  <span>Bootstrap</span>
+                  <span>CSS</span>
+                </div>
+                <div class="project-actions">
+                  <a href="#" class="btn btn-small">Live Demo</a>
+                  <a href="#" class="btn btn-small btn-ghost">GitHub</a>
+                </div>
+              </div>
+            </article>
+           
+            <article class="project-card glass-card" data-aos="fade-up" data-aos-delay="200">
+              <div class="project-image image-five"></div>
+              <div class="project-content">
+                <h3>Business Landing Page</h3>
+                <p>Conversion-focused structure with a modern look for professional service brands.</p>
+                <div class="tech-list">
+                  <span>JS</span>
+                  <span>CSS</span>
+                </div>
+                <div class="project-actions">
+                  <a href="#" class="btn btn-small">Live Demo</a>
+                  <a href="#" class="btn btn-small btn-ghost">GitHub</a>
+                </div>
+              </div>
+            </article>
+            
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="experience">
+        <div class="container">
+          <div class="section-head" data-aos="fade-up">
+            <p class="eyebrow">Experience</p>
+            <h2>Building steadily with curiosity and commitment.</h2>
+          </div>
+
+          <div class="timeline">
+            <div class="timeline-item" data-aos="fade-up">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card glass-card">
+                <h3>Frontend Developer</h3>
+                <p class="timeline-meta">2024 — Present</p>
+                <p>Designing polished interface systems for modern websites and personal brand projects.</p>
+              </div>
+            </div>
+            <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card glass-card">
+                <h3>UI/UX Implementation</h3>
+                <p class="timeline-meta">2023 — 2024</p>
+                <p>Transformed design concepts into responsive and accessible frontend experiences.</p>
+              </div>
+            </div>
+            <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card glass-card">
+                <h3>Freelance Web Projects</h3>
+                <p class="timeline-meta">2022 — 2023</p>
+                <p>Delivered custom landing pages and business websites for small clients and startups.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="education">
+        <div class="container">
+          <div class="section-head" data-aos="fade-up">
+            <p class="eyebrow">Education</p>
+            <h2>Learning through practice, research, and design discipline.</h2>
+          </div>
+
+          <div class="education-grid">
+            <article class="education-card glass-card" data-aos="fade-up">
+              <h3>Web Development Path</h3>
+              <p class="timeline-meta">Ongoing Learning</p>
+              <p>Exploring modern frameworks, design systems, performance optimization, and accessible UI.</p>
+            </article>
+            <article class="education-card glass-card" data-aos="fade-up" data-aos-delay="100">
+              <h3>Design & User Experience</h3>
+              <p class="timeline-meta">Continuous Practice</p>
+              <p>Building a strong foundation in user-centered interfaces, micro-interactions, and hierarchy.</p>
+            </article>
+            <article class="education-card glass-card" data-aos="fade-up" data-aos-delay="200">
+              <h3>Creative Problem Solving</h3>
+              <p class="timeline-meta">Hands-on Focus</p>
+              <p>Combining technical knowledge with aesthetic judgment to deliver memorable experiences.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="testimonials">
+        <div class="container">
+          <div class="section-head" data-aos="fade-up">
+            <p class="eyebrow">Testimonials</p>
+            <h2>Trusted by clients who value thoughtful design.</h2>
+          </div>
+
+          <div class="testimonial-slider" data-aos="fade-up">
+            <button class="slider-btn prev" id="prevTestimonial" aria-label="Previous testimonial"><i class="fas fa-arrow-left"></i></button>
+            <div class="testimonial-track">
+              <article class="testimonial-card glass-card active">
+                <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'><rect width='120' height='120' rx='30' fill='%236c63ff'/><circle cx='60' cy='48' r='24' fill='%23fff'/><path d='M24 104c10-18 24-28 36-28s26 10 36 28' fill='%23fff'/></svg>" alt="Client portrait" />
+                <p>“The website feels premium, fast, and incredibly polished. It instantly elevated our brand.”</p>
+                <h3>Aisha Khan</h3>
+                <span>Brand Founder</span>
+              </article>
+              <article class="testimonial-card glass-card">
+                <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'><rect width='120' height='120' rx='30' fill='%2300d9ff'/><circle cx='60' cy='48' r='24' fill='%23fff'/><path d='M24 104c10-18 24-28 36-28s26 10 36 28' fill='%23fff'/></svg>" alt="Client portrait" />
+                <p>“Every interaction feels intentional. The page is both beautiful and conversion-focused.”</p>
+                <h3>Daniel Ross</h3>
+                <span>Startup Coach</span>
+              </article>
+              <article class="testimonial-card glass-card">
+                <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'><rect width='120' height='120' rx='30' fill='%238b5cf6'/><circle cx='60' cy='48' r='24' fill='%23fff'/><path d='M24 104c10-18 24-28 36-28s26 10 36 28' fill='%23fff'/></svg>" alt="Client portrait" />
+                <p>“Exceptional attention to detail and a truly modern experience from start to finish.”</p>
+                <h3>Meera Ali</h3>
+                <span>Business Owner</span>
+              </article>
+            </div>
+            <button class="slider-btn next" id="nextTestimonial" aria-label="Next testimonial"><i class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="certifications">
+        <div class="container">
+          <div class="section-head" data-aos="fade-up">
+            <p class="eyebrow">Certifications</p>
+            <h2>Continually building expertise with modern tools and practices.</h2>
+          </div>
+
+          <div class="cert-grid">
+            <article class="cert-card glass-card" data-aos="fade-up">
+              <h3>Responsive Web Design</h3>
+              <p>Focused on flexible layouts, accessibility, and polished user flows.</p>
+            </article>
+            <article class="cert-card glass-card" data-aos="fade-up" data-aos-delay="80">
+              <h3>JavaScript Essentials</h3>
+              <p>Practical experience with modern DOM manipulation and interactive UI patterns.</p>
+            </article>
+            <article class="cert-card glass-card" data-aos="fade-up" data-aos-delay="160">
+              <h3>UI/UX Foundations</h3>
+              <p>Applied understanding of visual hierarchy, empathy, and conversion-focused design.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="stats">
+        <div class="container">
+          <div class="stats-banner glass-card">
+            <div class="stat-item" data-aos="fade-up">
+              <h3>10+</h3>
+              <p>Projects Completed</p>
+            </div>
+            <div class="stat-item" data-aos="fade-up" data-aos-delay="80">
+              <h3>8+</h3>
+              <p>Happy Clients</p>
+            </div>
+            <div class="stat-item" data-aos="fade-up" data-aos-delay="160">
+              <h3>6+</h3>
+              <p>MONTH Learning</p>
+            </div>
+            <div class="stat-item" data-aos="fade-up" data-aos-delay="240">
+              <h3>100%</h3>
+              <p>Client Satisfaction</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="contact">
+        <div class="container contact-grid">
+          <div class="contact-info" data-aos="fade-right">
+            <p class="eyebrow">Contact</p>
+            <h2>Let’s build something memorable together.</h2>
+            <p>Open to freelance opportunities, collaborations, and exciting product ideas.</p>
+            <ul class="contact-list">
+              <li><i class="fas fa-envelope"></i> summi1417@gmail.com</li>
+              <li><i class="fas fa-phone"></i> +92 3293114454</li>
+              <li><i class="fas fa-map-marker-alt"></i>RAHEEM YAAR KHAN, Pakistan</li>
+              <li><i class="fab fa-whatsapp"></i> wa.me/923293114454</li>
+            </ul>
+            <div class="map-card glass-card">
+              <i class="fas fa-map-marked-alt"></i>
+              <p>Available for remote projects worldwide.</p>
+            </div>
+          </div>
+
+          <form class="contact-form glass-card" data-aos="fade-left">
+            <div class="field-row">
+              <label>
+                <span>Name</span>
+                <input type="text" name="name" placeholder="Your name" required />
+              </label>
+              <label>
+                <span>Email</span>
+                <input type="email" name="email" placeholder="Your email" required />
+              </label>
+            </div>
+            <div class="field-row">
+              <label>
+                <span>Phone</span>
+                <input type="tel" name="phone" placeholder="Your phone" />
+              </label>
+              <label>
+                <span>Subject</span>
+                <input type="text" name="subject" placeholder="Project type" />
+              </label>
+            </div>
+            <label>
+              <span>Message</span>
+              <textarea name="message" rows="5" placeholder="Tell me about your idea..." required></textarea>
+            </label>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+            <p class="form-status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <a href="#home" class="brand">Summi<span>Fatima</span></a>
+          <p>Frontend Web Developer building elegant digital experiences with clean code and premium design.</p>
+        </div>
+        <div>
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Services</h3>
+          <ul>
+            <li>Responsive Website Design</li>
+            <li>Landing Page Design</li>
+            <li>Portfolio Website</li>
+            <li>Business Website</li>
+          </ul>
+        </div>
+       
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Summi Fatima. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
